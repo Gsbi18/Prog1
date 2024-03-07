@@ -3,17 +3,13 @@
 int main()
 {
     int magassag;
-    do
-    {
         printf("Adj meg egy pozitív páratlan számot: ");
         scanf("%d", &magassag);
         if (magassag <= 0 || magassag % 2 == 0)
         {
-            printf("Rossz számot adtál meg!");
+            printf("Rossz számot adtál meg!\n");
             return 0;
         }
-
-    } while (magassag <= 0 || magassag % 2 == 0);
 
     for (int i = 1; i <= magassag / 2 + 1; i++)
     {
