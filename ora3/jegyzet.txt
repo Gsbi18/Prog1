@@ -1,0 +1,14 @@
+alprogram: 
+-eljárás: nem ad vissza értéket 
+
+vagy 
+
+-függvény: pontosan egy értéket ad vissza (2 vagy több érték: GO)
+    - van egy bemenet és van egy kimenet!!
+    int[visszatérési érték tipusa] duplaz[fg neve](int n)[formális paraméter lista]
+    {
+        return 2*n;
+    }
+    int main()
+    {
+    int res=duplaz(6); [aktuális paraméter]
