@@ -8,7 +8,7 @@ int max_elem(const int n,const int tomb[])
         {
             max = tomb[i];
         }
-    }
+    } 
     return max;
 }
 int main()

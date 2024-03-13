@@ -1,7 +1,7 @@
-- tomb elemeinek szorzata!!!
+**- tomb elemeinek szorzata!!!
 - irjunk fuggvenyt ami kap egy tombot és dontse el hogy a tomb hogy palindrom-e vagy nem ? 
-- max_keres.c-t megcsinalni
-- irjunk egy contains nevu fuggvényt ami kap egy tombot kap egy elemet és megmondja hogy benne van -e a tombben
-- index fuggvenyt ami megmutatja holvan 
-- hogyan jelez ha nicns benne 
+**- max_keres.c-t megcsinalni
+**- irjunk egy contains nevu fuggvényt ami kap egy tombot kap egy elemet és megmondja hogy benne van -e a tombben
+**- index fuggvenyt ami megmutatja holvan 
+**- hogyan jelez ha nicns benne --- Kiírjuk hogy nincs benne!!!
 

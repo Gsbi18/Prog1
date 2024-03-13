@@ -12,36 +12,33 @@ int palindrom(int n, int tomb[])
 {
     int i = tomb[0];
     int j = tomb[n - 1];
-    int bool=0;
-    while (i < j)
+    int bool = 0;
+    while (i == j)
     {
-        if (tomb[i]==tomb[j])
+        if (tomb[i] == tomb[j])
         {
-            bool++;
+            bool = 1;
         }
         i++;
         j--;
     }
-    if (bool==(n/2))
-    {
-        return 1;
-    }
-    return 0;
-    
+    return bool;
 }
 int main()
 {
-    int szamok[10] = {0, 1, 2, 3,3, 2,1,0};
-    int szamok_meret = 8;
+    int szamok[10] = {5,1, 2, 3, 4,5, 3, 2, 1,5};
+    int szamok_meret = 10;
 
     kiir(szamok_meret, szamok);
-    int igaz=palindrom(szamok_meret, szamok);
-    if (igaz==1)
+
+    int igaz = palindrom(szamok_meret, szamok);
+
+    if (igaz == 1)
     {
         printf("Palindrom\n");
     }
-    else printf("Nem palindrom\n");
-    
+    else
+        printf("Nem palindrom\n");
 
     return 0;
 }
