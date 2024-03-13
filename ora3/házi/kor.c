@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-int kor_ker(int s)
+double kor_ker(int s)
 {
     return 2 * s * M_PI;
 }
-int kor_ter(int s)
+double kor_ter(int s)
 {
     return pow(s, 2) * M_PI;
 }
@@ -16,11 +16,11 @@ int main()
     printf("Add meg a kör sugarát: ");
     scanf("%d", &sugar);
 
-    int ker = kor_ker(sugar);
-    int ter = kor_ter(sugar);
+    double ker = kor_ker(sugar);
+    double ter = kor_ter(sugar);
 
-    printf("A kerület: %d\n", ker);
-    printf("A terület: %d\n", ter);
+    printf("A kerület: %.2lf\n", ker);
+    printf("A terület: %.2lf\n", ter);
 
     return 0;
 }
