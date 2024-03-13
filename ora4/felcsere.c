@@ -17,7 +17,7 @@ void felcsere(int n, int tomb[])
         int tmp = tomb[i];
         tomb[i] = tomb[j];
         tomb[j] = tmp;
-        i++;
+        i=i+1;
         j--;
     }
 }
