@@ -5,9 +5,9 @@
 int felhokarcolok(int n, int tomb[])
 {
     int sum = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        sum = sum+ abs(tomb[i] - tomb[i + 1]);
+        sum += abs(tomb[i] - tomb[i + 1]);
     }
     return sum;
 }
