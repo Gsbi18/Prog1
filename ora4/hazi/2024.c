@@ -6,4 +6,5 @@ int main()
     char x = '.';
     printf("%d\n", c * x);
 
+    return 0;
 }
