@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../prog1.h"
 
-int rfind_char(string s, char c)
+int char_count(string s, char c)
 {
     int db = 0;
     for (int i = 0; s[i] != '\0'; i++)
@@ -16,7 +16,7 @@ int rfind_char(string s, char c)
 
 int main()
 {
-    printf("%d\n", rfind_char("Abba", 'x'));
+    printf("%d\n", char_count("Abba", 'a'));
 
     return 0;
 }
