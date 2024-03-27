@@ -1,0 +1,3 @@
+321a/b
+321c
+-Az fgets az entert a sortörést is beteszi a sor végére!!!
