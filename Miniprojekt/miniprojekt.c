@@ -17,6 +17,19 @@ void make_file(string File_Name, string main_prog)
     fprintf(fp, "%s", main_prog);
     fclose(fp);
 }
+
+int file_exist(string File_Name)
+{
+    FILE *fp = fopen(File_Name, "r");
+    int is_exist = 0;
+    if (fp != NULL)
+    {
+        is_exist = 1;
+        fclose(fp);
+    }
+    return is_exist;
+}
+
 int main(int argc, string argv[])
 {
     string program_cs = "using System;\n\npublic class Main\n{\n\tpublic static void Main()\n\t{\n\t\tSystem.Console.WriteLine(\"Hello World\");\n\t}\n}";
@@ -37,15 +50,39 @@ int main(int argc, string argv[])
     }
     else if (strcmp(argv[1], "c") == 0 && argc == 2)
     {
-        make_file("main.c", main_c);
+        if (file_exist("main.c") == 1)
+        {
+            puts("Error: the file 'main.c' already exists");
+            exit(1);
+        }
+        else
+        {
+            make_file("main.c", main_c);
+        }
     }
     else if (strcmp(argv[1], "py") == 0 && argc == 2)
     {
-        make_file("main.py", main_py);
+        if (file_exist("main.py") == 1)
+        {
+            puts("Error: the file 'main.py' already exists");
+            exit(1);
+        }
+        else
+        {
+            make_file("main.py", main_py);
+        }
     }
     else if (strcmp(argv[1], "cs") == 0 && argc == 2)
     {
-        make_file("Program.cs", program_cs);
+        if (file_exist("Program.cs") == 1)
+        {
+            puts("Error: the file 'Program.cs' already exists");
+            exit(1);
+        }
+        else
+        {
+            make_file("Program.cs", program_cs);
+        }
     }
     else if (strcmp(argv[1], "cs") == 0 && strcmp(argv[2], "--stdout") == 0)
     {
