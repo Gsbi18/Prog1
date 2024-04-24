@@ -51,11 +51,13 @@ int main(int argc, string argv[])
                     "\n"
                     "}";
     string main_py ="#!/usr/bin/env python3\n" 
-                    "\ndef main():\n"
+                    "\n"
+                    "def main():\n"
                         "\tprint(\"Hello World!\")\n"
-                    "######################\n"
-                    "\nif __name__== \"__main__\":\n"
-                            "\tmain()";
+                    "################################\n"
+                    "\n"
+                    "if __name__== \"__main__\":\n"
+                        "\tmain()";
     if (argc == 1 || strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
     {
         puts("alap v1.0\n");
