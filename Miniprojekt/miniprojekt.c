@@ -3,6 +3,35 @@
 #include "prog1.h"
 #include <stdlib.h>
 
+#define  program_cs  "using System;\n \
+                        \n \
+                        public class Main\n \
+                        {\n \
+                            \tpublic static void Main()\n \
+                            \t{\n \
+                                \t\tSystem.Console.WriteLine(\"Hello World\");\n \
+                            \t} \
+                        \n}"
+
+#define  main_c  "#include <stdio.h>\n \
+                    \n \
+                    int main()\n \
+                    {\n \
+                        \tprintf(\"Hello World!\\n\");\n \
+                    \n \
+                        \treturn 0; \
+                    \n \
+                    }"
+
+#define  main_py "#!/usr/bin/env python3\n \
+                    \n \
+                    def main():\n \
+                        \tprint(\"Hello World!\")\n \
+                    ################################\n \
+                    \n \
+                    if __name__== \"__main__\":\n \
+                        \tmain()"
+
 void make_file(string File_Name, string main_prog)
 {
     string file_name = File_Name;
@@ -32,32 +61,7 @@ int file_exist(string File_Name)
 
 int main(int argc, string argv[])
 {
-    string program_cs = "using System;\n"
-                        "\n"
-                        "public class Main\n"
-                        "{\n"
-                            "\tpublic static void Main()\n"
-                            "\t{\n"
-                                "\t\tSystem.Console.WriteLine(\"Hello World\");\n"
-                            "\t}"
-                        "\n}";
-    string main_c = "#include <stdio.h>\n"
-                    "\n"
-                    "int main()\n"
-                    "{\n"
-                        "\tprintf(\"Hello World!\\n\");\n"
-                    "\n"
-                        "\treturn 0;"
-                    "\n"
-                    "}";
-    string main_py ="#!/usr/bin/env python3\n" 
-                    "\n"
-                    "def main():\n"
-                        "\tprint(\"Hello World!\")\n"
-                    "################################\n"
-                    "\n"
-                    "if __name__== \"__main__\":\n"
-                        "\tmain()";
+   
     if (argc == 1 || strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
     {
         puts("alap v1.0\n");
