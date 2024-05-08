@@ -14,7 +14,7 @@
  * Ez egy dinamikusan lefoglalt sztringet ad vissza,
  * amit a hívó oldalon majd valamikor fel kell szabadítani.
  */
-string get_string(const char* prompt)
+string get_string(const char *prompt)
 {
     char buf[BUFSIZE];
 
