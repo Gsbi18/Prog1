@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ancsangabor/Programozas/ora12/ptis'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _feltolt, symObjAddr: 0x0, symBinAddr: 0x100003820, symSize: 0x1BC }
+  - { offsetInCU: 0x42, offset: 0x42, size: 0x8, addend: 0x0, symName: _feltolt, symObjAddr: 0x0, symBinAddr: 0x100003820, symSize: 0x1BC }
+  - { offsetInCU: 0x10D, offset: 0x10D, size: 0x8, addend: 0x0, symName: _print_hallgato, symObjAddr: 0x1BC, symBinAddr: 0x1000039DC, symSize: 0x50 }
+  - { offsetInCU: 0x131, offset: 0x131, size: 0x8, addend: 0x0, symName: _strcmpi, symObjAddr: 0x20C, symBinAddr: 0x100003A2C, symSize: 0x100 }
+  - { offsetInCU: 0x1BB, offset: 0x1BB, size: 0x8, addend: 0x0, symName: _kiszur_ptisek, symObjAddr: 0x30C, symBinAddr: 0x100003B2C, symSize: 0x108 }
+  - { offsetInCU: 0x245, offset: 0x245, size: 0x8, addend: 0x0, symName: _rendez, symObjAddr: 0x414, symBinAddr: 0x100003C34, symSize: 0x170 }
+  - { offsetInCU: 0x2A1, offset: 0x2A1, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x584, symBinAddr: 0x100003DA4, symSize: 0x100 }
+...

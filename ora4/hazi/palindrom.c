@@ -26,7 +26,7 @@ int palindrom(int n, int tomb[])
 }
 int main()
 {
-    int szamok[10] = {5,1, 2, 3, 4,5, 3, 2, 1,5};
+    int szamok[10] = {5, 1, 2, 3, 4, 5, 3, 2, 1, 5};
     int szamok_meret = 10;
 
     kiir(szamok_meret, szamok);

@@ -3,28 +3,26 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
+#include "prog1.h"
 
-typedef char *string;
-
-bool strcmpi(const char *s1, const char *s2)
+int strcmpi(const string s1, const string s2)
 {
     if (strlen(s1) != strlen(s2))
     {
-        printf("Hiba nem ugyanolyan hosszú! \n");
-        exit(1);
+       return -1;
     }
-    bool flag = false;
+    int flag = false;
     for (int i = 0; s1[i] != '\0'; i++)
     {
         char c1 = tolower(s1[i]);
         char c2 = tolower(s2[i]);
         if (c1 == c2)
         {
-            flag = false;
+            flag = 0;
         }
         else
         {
-            flag = true;
+            flag = 1;
             return flag;
         }
     }
@@ -33,18 +31,24 @@ bool strcmpi(const char *s1, const char *s2)
 
 int main(int argc, string argv[])
 {
-    if (argc != 3)
+    if (argc != 3 )
     {
         printf("Rossz paraméterezés \n");
         exit(1);
     }
 
-    bool egyenloe = strcmpi(argv[1], argv[2]);
+
+    int egyenloe = strcmpi(argv[1], argv[2]);
     if (egyenloe == 0)
     {
         printf("Ugyanazok!\n");
     }
-    else
+    else if (egyenloe==-1)
+    {
+        printf("Nem ugyanolyan hosszú a két string!\n");
+        exit(1);
+    }
+    else 
     {
         printf("Különböznek!\n");
     }
