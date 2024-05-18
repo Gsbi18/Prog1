@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ancsangabor/Programozas/zh2/negyedik_vol2'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _more_than, symObjAddr: 0x0, symBinAddr: 0x100003920, symSize: 0x114 }
+  - { offsetInCU: 0x42, offset: 0x42, size: 0x8, addend: 0x0, symName: _more_than, symObjAddr: 0x0, symBinAddr: 0x100003920, symSize: 0x114 }
+  - { offsetInCU: 0xC8, offset: 0xC8, size: 0x8, addend: 0x0, symName: _kivesz, symObjAddr: 0x114, symBinAddr: 0x100003A34, symSize: 0x130 }
+  - { offsetInCU: 0x140, offset: 0x140, size: 0x8, addend: 0x0, symName: _feltolt, symObjAddr: 0x244, symBinAddr: 0x100003B64, symSize: 0x1B0 }
+  - { offsetInCU: 0x20A, offset: 0x20A, size: 0x8, addend: 0x0, symName: _kiir, symObjAddr: 0x3F4, symBinAddr: 0x100003D14, symSize: 0x54 }
+  - { offsetInCU: 0x22E, offset: 0x22E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x448, symBinAddr: 0x100003D68, symSize: 0x118 }
+...

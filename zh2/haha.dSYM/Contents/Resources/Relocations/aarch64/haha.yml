@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ancsangabor/Programozas/zh2/haha'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _more_than, symObjAddr: 0x0, symBinAddr: 0x100003924, symSize: 0x114 }
+  - { offsetInCU: 0x42, offset: 0x42, size: 0x8, addend: 0x0, symName: _more_than, symObjAddr: 0x0, symBinAddr: 0x100003924, symSize: 0x114 }
+  - { offsetInCU: 0xC8, offset: 0xC8, size: 0x8, addend: 0x0, symName: _kivesz, symObjAddr: 0x114, symBinAddr: 0x100003A38, symSize: 0x134 }
+  - { offsetInCU: 0x14F, offset: 0x14F, size: 0x8, addend: 0x0, symName: _feltolt, symObjAddr: 0x248, symBinAddr: 0x100003B6C, symSize: 0x1B0 }
+  - { offsetInCU: 0x219, offset: 0x219, size: 0x8, addend: 0x0, symName: _kiir, symObjAddr: 0x3F8, symBinAddr: 0x100003D1C, symSize: 0x54 }
+  - { offsetInCU: 0x23D, offset: 0x23D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x44C, symBinAddr: 0x100003D70, symSize: 0x110 }
+...

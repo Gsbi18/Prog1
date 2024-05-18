@@ -3,8 +3,8 @@
 #include <string.h>
 typedef char *string;
 
-#define BUFFER 100 // Sorok mérete
-#define MAX 1000   // Tömb mérete lesz
+#define BUFFER 1000 // Sorok mérete
+#define MAX 1000    // Tömb mérete lesz
 #define HATAR 500000
 typedef struct
 {
@@ -29,7 +29,7 @@ void more_than(int n, Film tomb[])
     printf("Ennyi %ddb film ez", db);
 }
 
-void kivesz(const char *fname, double tomb[])
+void kivesz(const char *fname, const int n, double tomb[])
 {
     FILE *fp = fopen(fname, "r");
     if (fp == NULL)
@@ -53,7 +53,7 @@ void kivesz(const char *fname, double tomb[])
     fclose(fp);
 }
 
-int feltolt(const char *fname, const int n, Film tomb[])
+int feltolt(const char *fname, Film tomb[])
 {
     FILE *fp = fopen(fname, "r");
     if (fp == NULL)
@@ -82,7 +82,6 @@ int feltolt(const char *fname, const int n, Film tomb[])
         c = atoi(p);
 
         Film f;
-
         f.ertek = a;
         // kivesz(fname,n,tomb);
         strcpy(f.nev, b);
@@ -105,14 +104,14 @@ int main()
     const char *fname = "mozik.csv";
 
     Film tomb[MAX];
-    double elso[1000];
-    kivesz(fname, elso);
-    for (int i = 0; i < 1000; i++)
+    double elso[251];
+    kivesz(fname, 251, elso);
+    int elemszam = feltolt(fname, MAX, tomb);
+    for (int i = 0; i < 251; i++)
     {
         // printf("%lf \n",elso[i]);
         tomb[i].ertek = elso[i];
     }
-    int elemszam = feltolt(fname, MAX, tomb);
     printf("A filmek amik: tobb mint fel millio szavazatot kaptak:\n");
     more_than(elemszam, tomb);
     return 0;

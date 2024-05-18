@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ancsangabor/Programozas/zh2/feladat4'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _feltolt, symObjAddr: 0x0, symBinAddr: 0x100003BB0, symSize: 0x1B8 }
+  - { offsetInCU: 0x42, offset: 0x42, size: 0x8, addend: 0x0, symName: _feltolt, symObjAddr: 0x0, symBinAddr: 0x100003BB0, symSize: 0x1B8 }
+  - { offsetInCU: 0xFF, offset: 0xFF, size: 0x8, addend: 0x0, symName: _print_film, symObjAddr: 0x1B8, symBinAddr: 0x100003D68, symSize: 0x88 }
+  - { offsetInCU: 0x14D, offset: 0x14D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x240, symBinAddr: 0x100003DF0, symSize: 0xC0 }
+...
